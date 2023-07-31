@@ -34,11 +34,16 @@ a {
     border-radius: 8px;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
     margin: 5px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h5 {
     text-align: center;
-    padding: 18px;
+    padding: 30px 18px;
+    border-top: 1px solid;
 }
 
 h6,
@@ -50,27 +55,99 @@ h4 {
     text-align: center;
 }
 
+.all-sub ul li {
+    width: 25%;
+    padding: 0;
+}
+
+.all-sub ul li a {
+    padding: 0 5px;
+    height: 100%;
+    font-size: 12px;
+}
+
 .tithi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .tithi span {
     font-weight: 100;
 }
 
-.aaj-ka-itihas {
+
+/* .aaj-ka-itihas {
     border: 1px solid;
     border-radius: 8px;
     margin: 6px;
     margin-bottom: 15px;
-}
+} */
 
 .tithi h6 {
-    border: 1px solid;
-    border-radius: 4px;
+    /* border: 1px solid; */
+    /* border-radius: 4px; */
     margin: 6px;
     padding: 5px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* back to top  */
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#button {
+    display: inline-block;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 40px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+h3 a {
+    padding: 0;
+    height: 100%;
+    text-decoration: dotted;
+    border: none;
+    box-shadow: none;
 }

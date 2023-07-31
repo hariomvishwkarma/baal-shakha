@@ -4,73 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Baal Shakha</title>
-
 </head>
 
 <body>
     <main>
+        <a id="button" class="show"></a>
         <div class="tithi">
-            <h6>Aaj ka panchang - <span>July 31 2023, Somawara, Chaturdashi, Shukla Paksha, vikram samvat 2080, yugabdh 5125</span></h6>
+            <h6>आज का पंचांग<span>31 जुलाई 2023, सोमवार, चतुर्दशी, शुक्ल पक्ष, विक्रम संवत 2080, युगाब्द 5125</span></h6>
+            <div class="aaj-ka-itihas">
+                <h5>आज का इतिहास</h5>
+            </div>
         </div>
-        <div class="aaj-ka-itihas">
-            <h5>aaj ka itihas</h5>
-        </div>
+
         <div class="all-sub">
             <ul>
-                <li><a href="#">Sharirik</a></li>
-                <li><a href="#">Boudhik</a></li>
-                <li><a href="#">Audio Book</a></li>
-                <li><a href="#">Anya</a></li>
+                <li><a id="h-sharirik" href="#sharirik">शारीरिक</a></li>
+                <li><a id="h-boudhik" href="#boudhik">बौद्धिक</a></li>
+                <li><a id="h-anya" href="#anya">ऑडियो बुक</a></li>
+                <li><a id="h-audio-book" href="#audio-book">अन्य</a></li>
             </ul>
         </div>
-        <div class="sharirik">
+        <div id="sharirik" class="sharirik">
             <h4>Sharirik</h4>
             <ul>
-                <li><a href="khel.html">khel</a></li>
-                <li><a href="#">yog</a></li>
-                <li><a href="#">aasan</a></li>
-                <li><a href="#">Ghosh</a></li>
-                <li><a href="#">dand sanchalan</a></li>
-                <li><a href="#">yashti</a></li>
-                <li><a href="#">niyudh</a></li>
-                <li><a href="#">padvinyas</a></li>
-                <li><a href="#">dand yudh</a></li>
-                <li><a href="#">samta</a></li>
+                <li><a href="khel.html">खेल</a></li>
+                <li><a href="#">योग</a></li>
+                <li><a href="#">आसन</a></li>
+                <li><a href="#">घोष</a></li>
+                <li><a href="#">दंड संचलन</a></li>
+                <li><a href="#">दंड युद्ध</a></li>
+                <li><a href="#">यष्टि</a></li>
+                <li><a href="#">पदविन्यास</a></li>
+                <li><a href="#">नियुद्ध</a></li>
+                <li><a href="#">समता</a></li>
             </ul>
         </div>
-        <div class="boudhik">
-            <h4>Boudhik</h4>
+        <div id="boudhik" class="boudhik">
+            <h4>बौद्धिक</h4>
             <ul>
-                <li><a href="#">Ekal Geet with Audio</a></li>
-                <li><a href="#">Samuhik Geet with Audio</a></li>
-                <li><a href="#">Amritvachal</a></li>
-                <li><a href="#">Laghu Katha</a></li>
-                <li><a href="#">Dirgh Katha</a></li>
-                <li><a href="#">Suvichar</a></li>
-                <li><a href="#">mahapurusho ki jivni</a></li>
+                <li><a href="#">एकल गीत</a></li>
+                <li><a href="#">सामुहिक गीत</a></li>
+                <li><a href="#">अमृतवचन</a></li>
+                <li><a href="#">सुभाषित</a></li>
+                <li><a href="#">दोहे</a></li>
+                <li><a href="#">सुविचार</a></li>
+                <li><a href="#">लघुकथा</a></li>
+                <li><a href="#">दीर्घ कथा</a></li>
+                <li><a href="#">महापुरुषो की कहानी</a></li>
             </ul>
         </div>
-        <div class="Anya">
-            <h4>Anya</h4>
+        <div id="anya" class="Anya">
+            <h4>अन्य</h4>
             <ul>
-                <li><a href="#">Mananiya Sarsanghchalo ki Suchi va jivan parichay</a></li>
-                <li><a href="#">sangh ke chhah utsav</a></li>
-                <li><a href="#">Sangh ki Gatividiya</a></li>
-                <li><a href="#">Sangh ki Pratigya</a></li>
+                <li><a href="#">संघ का इतिहास</a></li>
+                <li><a href="#">मननीय सरसंघचालक की सुचि</a></li>
+                <li><a href="#">वर्तमान में अखिल भारतीय स्टार की टोली की सुची</a></li>
+                <li><a href="#">संघ के छह उत्सव</a></li>
+                <li><a href="#">संघ की गतिविद्या</a></li>
+                <li><a href="#">संघ की प्रतिज्ञा</a></li>
             </ul>
         </div>
-        <div class="audio-book">
-            <h4>Audio Book</h4>
+        <div id="audio-book" class="audio-book">
+            <h4>ऑडियो बुक</h4>
             <ul>
-                <li><a href="#">Lakshya or karya</a></li>
-                <li><a href="#">me sadharan swayamsevak</a></li>
-                <li><a href="#">dr sahab ki aatmakatha</a></li>
-                <li><a href="#">guruji ka jivan parichay</a></li>
+                <li><a href="#">लक्ष्य या कार्य</a></li>
+                <li><a href="#">मैं साधरण स्वयंसेवक</a></li>
+                <li><a href="#">डॉ साहब की आत्मकथा</a></li>
+                <li><a href="#">गुरुजी का जीवन परिचय</a></li>
             </ul>
         </div>
     </main>
+    <script>
+        $("#h-sharirik").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#sharirik").offset().top
+            }, 1000);
+        });
+        $("#h-boudhik").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#boudhik").offset().top
+            }, 1000);
+        });
+        $("#h-anya").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#audio-book").offset().top
+            }, 1000);
+        });
+        $("#h-audio-book").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#anya").offset().top
+            }, 1000);
+        });
+
+
+
+
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
 </body>
 
 </html>
