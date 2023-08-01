@@ -5,7 +5,7 @@
 }
 
 main {
-    padding: 5px;
+    padding: 12px;
 }
 
 ul {
@@ -44,6 +44,7 @@ h5 {
     text-align: center;
     padding: 30px 18px;
     border-top: 1px solid;
+    font-size: 16px;
 }
 
 h6,
@@ -87,6 +88,7 @@ h4 {
 .tithi h6 {
     /* border: 1px solid; */
     /* border-radius: 4px; */
+    font-size: 14px;
     margin: 6px;
     padding: 5px;
     text-decoration: none;
