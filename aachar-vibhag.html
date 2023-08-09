@@ -105,7 +105,22 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
+        // about button
+        $('.link-about-us1').on('click', function() {
+            $(this).addClass('is-active');
+            $(".about-peragraph").hide();
+            $(".about-peragraph1").show();
+            $('.link-about-us').removeClass('is-active');
+        });
+
+        $('.link-about-us').on('click', function() {
+            $(this).addClass('is-active');
+            $(".about-peragraph1").hide();
+            $(".about-peragraph").show();
+            $('.link-about-us1').removeClass('is-active');
+        });
+
         // $(document).ready(function() {
         //     $(".shakha-prarmbh").show();
 
